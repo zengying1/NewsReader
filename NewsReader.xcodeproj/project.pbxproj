@@ -10,9 +10,10 @@
 		7E5C5D421DBC7DB10012F170 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5C5D411DBC7DB10012F170 /* main.m */; };
 		7E5C5D451DBC7DB10012F170 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5C5D441DBC7DB10012F170 /* AppDelegate.m */; };
 		7E5C5D481DBC7DB10012F170 /* HomePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5C5D471DBC7DB10012F170 /* HomePage.m */; };
-		7E5C5D4B1DBC7DB10012F170 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5C5D491DBC7DB10012F170 /* Main.storyboard */; };
 		7E5C5D4D1DBC7DB10012F170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E5C5D4C1DBC7DB10012F170 /* Assets.xcassets */; };
-		7E5C5D501DBC7DB10012F170 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5C5D4E1DBC7DB10012F170 /* LaunchScreen.storyboard */; };
+		7E5C5D721DBCDAC80012F170 /* ZYBasePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5C5D711DBCDAC80012F170 /* ZYBasePage.m */; };
+		7E5C5D751DBCDC8B0012F170 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5C5D731DBCDC8B0012F170 /* LaunchScreen.storyboard */; };
+		7E5C5D761DBCDC8B0012F170 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E5C5D741DBCDC8B0012F170 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +23,15 @@
 		7E5C5D441DBC7DB10012F170 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7E5C5D461DBC7DB10012F170 /* HomePage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePage.h; sourceTree = "<group>"; };
 		7E5C5D471DBC7DB10012F170 /* HomePage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePage.m; sourceTree = "<group>"; };
-		7E5C5D4A1DBC7DB10012F170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E5C5D4C1DBC7DB10012F170 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7E5C5D4F1DBC7DB10012F170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E5C5D511DBC7DB10012F170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E5C5D571DBC7E1F0012F170 /* Readme */ = {isa = PBXFileReference; lastKnownFileType = text; name = Readme; path = NewsReader/Readme; sourceTree = "<group>"; };
-		7E5C5D5F1DBC7FF90012F170 /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		7E5C5D5F1DBC7FF90012F170 /* Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Defines.h; path = Define/Defines.h; sourceTree = "<group>"; };
+		7E5C5D6F1DBCC89C0012F170 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		7E5C5D701DBCDAC80012F170 /* ZYBasePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYBasePage.h; sourceTree = "<group>"; };
+		7E5C5D711DBCDAC80012F170 /* ZYBasePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYBasePage.m; sourceTree = "<group>"; };
+		7E5C5D731DBCDC8B0012F170 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E5C5D741DBCDC8B0012F170 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				7E5C5D411DBC7DB10012F170 /* main.m */,
+				7E5C5D6F1DBCC89C0012F170 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -147,15 +152,19 @@
 				7E5C5D661DBC80EC0012F170 /* Xib */,
 			);
 			name = Resources;
+			path = Resources/Xib;
 			sourceTree = "<group>";
 		};
 		7E5C5D611DBC80500012F170 /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				7E5C5D701DBCDAC80012F170 /* ZYBasePage.h */,
+				7E5C5D711DBCDAC80012F170 /* ZYBasePage.m */,
 				7E5C5D461DBC7DB10012F170 /* HomePage.h */,
 				7E5C5D471DBC7DB10012F170 /* HomePage.m */,
 			);
 			name = Page;
+			path = Controller/Page;
 			sourceTree = "<group>";
 		};
 		7E5C5D621DBC80680012F170 /* Widget */ = {
@@ -189,8 +198,8 @@
 		7E5C5D661DBC80EC0012F170 /* Xib */ = {
 			isa = PBXGroup;
 			children = (
-				7E5C5D4E1DBC7DB10012F170 /* LaunchScreen.storyboard */,
-				7E5C5D491DBC7DB10012F170 /* Main.storyboard */,
+				7E5C5D731DBCDC8B0012F170 /* LaunchScreen.storyboard */,
+				7E5C5D741DBCDC8B0012F170 /* Main.storyboard */,
 			);
 			name = Xib;
 			sourceTree = "<group>";
@@ -261,9 +270,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E5C5D501DBC7DB10012F170 /* LaunchScreen.storyboard in Resources */,
+				7E5C5D761DBCDC8B0012F170 /* Main.storyboard in Resources */,
 				7E5C5D4D1DBC7DB10012F170 /* Assets.xcassets in Resources */,
-				7E5C5D4B1DBC7DB10012F170 /* Main.storyboard in Resources */,
+				7E5C5D751DBCDC8B0012F170 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,30 +285,12 @@
 			files = (
 				7E5C5D481DBC7DB10012F170 /* HomePage.m in Sources */,
 				7E5C5D451DBC7DB10012F170 /* AppDelegate.m in Sources */,
+				7E5C5D721DBCDAC80012F170 /* ZYBasePage.m in Sources */,
 				7E5C5D421DBC7DB10012F170 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		7E5C5D491DBC7DB10012F170 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7E5C5D4A1DBC7DB10012F170 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7E5C5D4E1DBC7DB10012F170 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7E5C5D4F1DBC7DB10012F170 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7E5C5D521DBC7DB10012F170 /* Debug */ = {
@@ -388,6 +379,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/Oreal51/Documents/iOS/git/NewsReader/NewsReader/PrefixHeader.pch;
 				INFOPLIST_FILE = NewsReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Oreal51.NewsReader;
@@ -399,6 +391,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/Oreal51/Documents/iOS/git/NewsReader/NewsReader/PrefixHeader.pch;
 				INFOPLIST_FILE = NewsReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Oreal51.NewsReader;
@@ -454,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/Oreal51/Documents/iOS/git/NewsReader/NewsReader/PrefixHeader.pch;
 				INFOPLIST_FILE = NewsReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Oreal51.NewsReader;
@@ -503,6 +497,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/Oreal51/Documents/iOS/git/NewsReader/NewsReader/PrefixHeader.pch;
 				INFOPLIST_FILE = NewsReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Oreal51.NewsReader;
@@ -552,6 +547,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/Oreal51/Documents/iOS/git/NewsReader/NewsReader/PrefixHeader.pch;
 				INFOPLIST_FILE = NewsReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Oreal51.NewsReader;
